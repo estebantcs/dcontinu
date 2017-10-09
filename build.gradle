@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'org.springframework.boot' version '1.4.3.RELEASE'
+}
+
+group 'DContinuos'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'org.springframework:spring-orm:4.2.5.RELEASE'
+    compile 'org.hibernate:hibernate-core:5.2.1.Final'
+    compile 'org.apache.tomcat:tomcat-dbcp:8.0.32'
+}
